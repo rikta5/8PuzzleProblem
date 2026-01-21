@@ -88,3 +88,15 @@ To run the benchmark suite and generate analysis plots (stored in `results/`):
 ```bash
 ./run_experiments.bat
 ```
+
+### Web Interface (Prototype)
+
+A presentation website with a web interface is available here:
+[The Sliding Puzzle Problem](https://print-nest-03530227.figma.site)
+
+**Note**: This web interface requires a live backend server to perform the actual puzzle solving. Since the backend provided here runs locally, `localhost` will not be accessible directly from the external presentation site.
+
+To make it work, you must either:
+
+1. **Expose the local server** using a tool like [ngrok](https://ngrok.com/) (e.g., run `ngrok http 5000`) and update the web application configuration to point to the secure tunnel URL.
+2. **Host the backend** on a public cloud server (like Heroku, Render, or AWS) and connect the web interface to that domain.
